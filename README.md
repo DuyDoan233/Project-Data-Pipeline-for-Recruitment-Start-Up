@@ -12,4 +12,8 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
 
 ## Process description
 - Fake Data process
-  - 
+  - This project has 'Star Schema' 
+- ETL process
+
+## Requirements
+- The folder with Docker-compose & Dockerfile.
