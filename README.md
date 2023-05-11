@@ -9,3 +9,7 @@ This project aims to build a near real-time ETL pipeline to calculate the total 
 Since it mainly focuses on building the ETL pipeline so the dataset used for processing is faked from the customer's schema.
 - [CassandraDB (DataLake)]()
 - [MySQLDB (Data Warehouse)]()
+
+## Process description
+- Fake Data process
+  - 
