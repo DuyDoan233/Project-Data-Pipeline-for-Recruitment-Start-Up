@@ -25,9 +25,9 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
   - Apache Spark: Framework to build the ETL script (Including PySpark & SparkSQL)
   - Docker: Install Cassandra(as DataLake), MySQL(as Data Warehouse).
     - Cassandra: raw data would store in a keyspace named 'datalake'.
-    - MySQL: processed data would store in the database named 'DW', the shorten of Data Warehouse.<br>
+    - MySQL: processed data would store in the database named 'DW', the shorten of Data Warehouse.
+    
 - All the requirements above are packaged inside Dockerfile and Docker-compose.yaml.
-
   - Dockerfile & Docker-compose detail:
     - [Dockerfile](##):
       - A file containing the commands used to install the framework, libraries as well as copy Data Lake and Data Warehouse-related data scripts to Docker Storage (see specific paths in the Dockerfile) for the purpose of creating Dockerfile creates images that support the ETL pipeline process.
