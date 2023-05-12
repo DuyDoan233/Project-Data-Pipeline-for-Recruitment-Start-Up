@@ -25,4 +25,4 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
     - MySQL: processed data would store in the database named 'DW', the shorten of Data Warehouse.<br>
 - 🠊 All the above requirements are packaged inside Dockerfile and Docker-compose.yaml.
 
-  ### Dockerfile & Docker-compose detail
+- Dockerfile & Docker-compose detail
