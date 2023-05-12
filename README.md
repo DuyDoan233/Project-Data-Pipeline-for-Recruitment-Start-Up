@@ -1,7 +1,7 @@
 # Project-Data-Pipeline-for-Recruitment-Start-Up
 
 ## Introduction
-This project is to build a near real-time ETL pipeline for a recruitment company to calculate the total number of clicks, candidates applying, and the qualified and unqualified people for jobs on the recruitment website by combining programming language and frameworks like Python, Apache Spark (PySpark, SparkSQL), Docker.
+This project is to build a near real-time ETL pipeline for a recruitment company to calculate the total number of clicks, candidates applying, and the qualified and unqualified people for jobs on the recruitment website by combining programming language and frameworks like Python, Apache Spark(PySpark, SparkSQL), Docker.
 <br>
 ![test (1)](https://github.com/DuyDoan233/Project-Data-Pipeline-for-Recruitment-Start-Up-/assets/101572443/d9656f3f-5c8e-44b7-973c-972b5e8d6771)
 
@@ -14,7 +14,10 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
 - Fake Data process
   - Since this project only received schema and a limited amount of data from the customer, in order to increase the size of the data to test ETL scripts as well as simulate the process of a near real-time ETL pipeline, I built a Python script ([Fake_data_process.py](##)) to fake randomly generate from 1 to 10 records after 'Time = Script running time + 5s sleep'.
 - ETL process
-  - 
+  - Since the processing selection is near real-time (batch processing), the first is to compare the latest update time of the data inside the Data Lake and the Data Warehouse.
+  - If the conditions are not satisfied, the comparison will continue.
+  - But if the condition is met, then it will get the latest values and trigger the ETL script to filter and the job_id, publisher_id, campaign_id, group_id, ts, custom_track, bid values from there in MySQLBD.
+![screenshot_1683909018](https://github.com/DuyDoan233/Project-Data-Pipeline-for-Recruitment-Start-Up/assets/101572443/b8b06da5-e94c-4637-b3ed-755c212f5905)
 
 ## Requirements
 - Since it simulates an actual project, so we use some programming\tools\framework such as:
@@ -25,4 +28,5 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
     - MySQL: processed data would store in the database named 'DW', the shorten of Data Warehouse.<br>
 - 🠊 All the above requirements are packaged inside Dockerfile and Docker-compose.yaml.
 
-- Dockerfile & Docker-compose detail
+- Dockerfile & Docker-compose detail:
+  - 
