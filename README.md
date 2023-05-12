@@ -1,7 +1,7 @@
 # Project-Data-Pipeline-for-Recruitment-Start-Up
 
 ## Introduction
-This project aims to build a near real-time ETL pipeline to calculate the total number of clicks, candidates applying, and the qualified and unqualified people for jobs on the recruitment website by combining programming language and frameworks like Python, Apache Spark (PySpark, SparkSQL), Docker.
+This project is to build a near real-time ETL pipeline for a recruitment company to calculate the total number of clicks, candidates applying, and the qualified and unqualified people for jobs on the recruitment website by combining programming language and frameworks like Python, Apache Spark (PySpark, SparkSQL), Docker.
 <br>
 ![test (1)](https://github.com/DuyDoan233/Project-Data-Pipeline-for-Recruitment-Start-Up-/assets/101572443/d9656f3f-5c8e-44b7-973c-972b5e8d6771)
 
@@ -12,8 +12,17 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
 
 ## Process description
 - Fake Data process
-  - This project has 'Star Schema' 
+  - Since this project only received schema and a limited amount of data from the customer, in order to increase the size of the data to test ETL scripts as well as simulate the process of a near real-time ETL pipeline, I built a Python script ([Fake_data_process.py](##)) to fake randomly generate from 1 to 10 records after 'Time = Script running time + 5s sleep'.
 - ETL process
+  - 
 
 ## Requirements
-- The folder with Docker-compose & Dockerfile.
+- Since it simulates an actual project, so we use some programming\tools\framework such as:
+  - Python: Use to build the Fake_data_process.py script to combine with ETL pipeline to simulate the near real-time process.
+  - Apache Spark: Framework to build the ETL script (Including PySpark & SparkSQL)
+  - Docker: Install Cassandra(as DataLake), MySQL(as Data Warehouse).
+    - Cassandra: raw data would store in a keyspace named 'datalake'.
+    - MySQL: processed data would store in the database named 'DW', the shorten of Data Warehouse.
+=> All the above requirements are packaged inside Dockerfile and Docker-compose.yaml.
+
+  ## Dockerfile & Docker-compose detail
