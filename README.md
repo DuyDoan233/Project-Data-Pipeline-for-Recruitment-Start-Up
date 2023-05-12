@@ -29,7 +29,7 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
 - 🠊 All the above requirements are packaged inside Dockerfile and Docker-compose.yaml.
 
 - Dockerfile & Docker-compose detail:
-  - Dockerfile:
+  - [Dockerfile](##):
     - A file containing the commands used to install the framework, libraries as well as copy Data Lake and Data Warehouse-related data scripts to Docker Storage (see specific paths in the Dockerfile) for the purpose of creating Dockerfile creates images that support the ETL pipeline process.
-  - Docker-composoe:
+  - [Docker-compose](##):
     - A file.yaml that supports installing containers as well as running Dockerfile. In this project, docker-compose.yaml supports installing containers for Cassandra, MySQL and the scripts to run the ETL pipeline.
