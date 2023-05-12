@@ -23,6 +23,6 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
   - Docker: Install Cassandra(as DataLake), MySQL(as Data Warehouse).
     - Cassandra: raw data would store in a keyspace named 'datalake'.
     - MySQL: processed data would store in the database named 'DW', the shorten of Data Warehouse. <br>
-<br>🠊 All the above requirements are packaged inside Dockerfile and Docker-compose.yaml.
+-🠊 All the above requirements are packaged inside Dockerfile and Docker-compose.yaml.
 
   ### Dockerfile & Docker-compose detail
