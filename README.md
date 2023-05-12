@@ -16,7 +16,7 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
 - ETL process
   - Since the processing selection is near real-time (batch processing), the first is to compare the latest update time of the data inside the Data Lake and the Data Warehouse.
   - If the conditions are not satisfied, the comparison will continue.
-  - But if the condition is met, then it will get the latest values and trigger the ETL script to filter and the job_id, publisher_id, campaign_id, group_id, ts, custom_track, bid values from there in MySQLBD.
+  - But if the condition is met, then it will get the latest values and trigger the ETL script to filter and the job_id, publisher_id, campaign_id, group_id, ts, custom_track, bid values from there in MySQLBD.<br>
 ![screenshot_1683909018](https://github.com/DuyDoan233/Project-Data-Pipeline-for-Recruitment-Start-Up/assets/101572443/b8b06da5-e94c-4637-b3ed-755c212f5905)
 
 ## Requirements
