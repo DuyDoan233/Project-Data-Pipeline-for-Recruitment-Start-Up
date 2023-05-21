@@ -26,10 +26,4 @@ Since it mainly focuses on building the ETL pipeline so the dataset used for pro
   - Docker: Install Cassandra(as DataLake), MySQL(as Data Warehouse).
     - Cassandra: raw data would store in a keyspace named 'datalake'.
     - MySQL: processed data would store in the database named 'DW', the shorten of Data Warehouse.
-    
-- All the requirements above are packaged inside Dockerfile and Docker-compose.yaml.
-  - Dockerfile & Docker-compose detail:
-    - [Dockerfile](##):
-      - A file containing the commands used to install the framework, libraries as well as copy Data Lake and Data Warehouse-related data scripts to Docker Storage (see specific paths in the Dockerfile) for the purpose of creating Dockerfile creates images that support the ETL pipeline process.
-    - [Docker-compose](##):
-      - A file.yaml that supports installing containers as well as running Dockerfile. In this project, docker-compose.yaml supports installing containers for Cassandra, MySQL and the scripts to run the ETL pipeline.
+  - DataGrip: is a IDE for SQL, I using it to connect and process data with MySQL and Cassandra.
